@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Dashboard</h1>
+    <button onclick="logout()">Logout</button>
+    <div id="users-section">
+      <h2>Users</h2>
+      <ul id="user-list"></ul>
+    </div>
+    <div id="tasks-section">
+      <h2>All Tasks</h2>
+      <form id="task-form">
+  <input type="text" id="title" placeholder="Task Title" required />
+  <input type="text" id="assignedTo" placeholder="Assign to (User ID)" required />
+  <button type="submit">Assign Task</button>
+</form>
+
+<ul id="task-list"></ul>
+    </div>
+  </div>
+  <footer>Developed by Padmalochan Jena</footer>
+  <script src="js/admin.js"></script>
+</body>
+</html>
